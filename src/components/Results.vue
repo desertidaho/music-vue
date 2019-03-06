@@ -42,11 +42,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .results {
-    background-color: black;
-    opacity: 0.7;
-  }
-
   h3 {
     margin: 40px 0 0;
   }
