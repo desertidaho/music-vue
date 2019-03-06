@@ -17,7 +17,7 @@ export default new Vuex.Store({
       let url = 'https://itunes.apple.com/search?callback=?&term=' + artist;
       $.getJSON(url)
         .then(res => {
-          commit('setResults', res.results.splice(0, 25))
+          commit('setResults', res.results.splice(0, 20))
         })
         .catch(err => console.log(err))
     }

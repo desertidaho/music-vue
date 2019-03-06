@@ -2,14 +2,15 @@
   <div class="home container-fluid">
     <div class="row">
       <div class="col text-center">
-        <h1 class="text-white mt-3">Music-Vue</h1>
+        <h1 class="text-white mt-3">ListenUp <i class="fas fa-arrow-circle-up arrow mt-3"></i> </h1>
       </div>
     </div>
     <div class="row">
       <div class="col-12 d-flex justify-content-center mt-3">
         <form @submit.prevent="search" class='form-inline'>
-          <input type="text" placeholder=" Title..." v-model="query" required id="title-input">
-          <button class="btn btn-sm btn-outline-light ml-2" type="submit">Search</button>
+          <input type="text" placeholder=" Enter artist, song, or album..." v-model="query" required id="title-input"
+            class="shadow-lg">
+          <button class="btn btn-sm btn-outline-light ml-2 shadow-lg" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -30,7 +31,6 @@
       }
     },
     computed: {
-
     },
     methods: {
       search() {
@@ -48,10 +48,16 @@
 
 <style>
   .home {
-    background: url('https://i.ibb.co/3T2YByq/music2.jpg');
+    background: url('../assets/img/music2.jpg');
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 140%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 
   input[type="text"]#title-input::-webkit-input-placeholder {
